@@ -1,0 +1,28 @@
+# Build output - Docker will create its own target folder
+target/
+*.jar
+*.war
+
+# Maven local files
+.mvn/wrapper/maven-wrapper.jar
+! .mvn/wrapper/maven-wrapper.jar
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Docker files
+Dockerfile
+.dockerignore
+docker-compose.yml
