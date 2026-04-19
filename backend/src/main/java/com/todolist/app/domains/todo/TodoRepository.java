@@ -1,6 +1,5 @@
-package com.todolist.app.repositories;
+package com.todolist.app.domains.todo;
 
-import com.todolist.app.models.Todo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

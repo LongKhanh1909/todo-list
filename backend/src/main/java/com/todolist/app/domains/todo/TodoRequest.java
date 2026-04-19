@@ -1,4 +1,4 @@
-package com.todolist.app.dtos;
+package com.todolist.app.domains.todo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;

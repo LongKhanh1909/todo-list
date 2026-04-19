@@ -1,6 +1,6 @@
-package com.todolist.app.models;
+package com.todolist.app.domains.todo;
 
-import com.todolist.app.dtos.Status;
+import com.todolist.app.domains.user.User;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -24,5 +24,9 @@ public class Todo {
     private LocalDateTime endDate;
 
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private TodoStatus todoStatus;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
 }

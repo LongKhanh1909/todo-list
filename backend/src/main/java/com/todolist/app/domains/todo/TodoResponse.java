@@ -1,4 +1,4 @@
-package com.todolist.app.dtos;
+package com.todolist.app.domains.todo;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,6 +12,8 @@ import java.time.LocalDateTime;
 public class TodoResponse {
     private long id;
 
+    private long userId;
+
     private String title;
 
     private String content;
@@ -20,5 +22,5 @@ public class TodoResponse {
 
     private LocalDateTime endDate;
 
-    private Status status;
+    private TodoStatus todoStatus;
 }
