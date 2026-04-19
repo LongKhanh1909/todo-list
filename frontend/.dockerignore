@@ -1,0 +1,30 @@
+# Dependency directory - huge and OS-specific
+node_modules
+
+# Local build outputs - Docker will make its own fresh 'dist'
+dist
+build
+
+# git
+.git
+.gitignore
+
+# Docker files themselves
+Dockerfile
+.dockerignore
+
+# Security
+.env
+.env.local
+
+# Logs and Debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor settings
+.vscode
+.idea
+*.suo
+*.ntvs
+*.njsproj
